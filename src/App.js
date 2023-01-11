@@ -10,6 +10,8 @@ function App() {
 
   let [글제목, 글제목변경] = useState(['남자 코트 추천', '강남 우동 맛집', '파이썬 독학']);
   let [좋아요, 좋아요변경] = useState(0);
+  let [좋아요2, 좋아요변경2] = useState(0);
+  let [좋아요3, 좋아요변경3] = useState(0);
 
   let posts = '강남 고기 맛집';
 
@@ -42,13 +44,13 @@ function App() {
       </div>
 
       <div className="list">
-        <h3>{글제목[1]} <span onClick={() => { 좋아요변경(좋아요 + 1) }}>👍</span> {좋아요} </h3>
+        <h3>{글제목[1]} <span onClick={() => { 좋아요변경2(좋아요2 + 1) }}>👍</span> {좋아요2} </h3>
         <p>2월 18일 발행</p>
         <hr />
       </div>
 
       <div className="list">
-        <h3>{글제목[2]}</h3>
+        <h3>{글제목[2]} <span onClick={() => { 좋아요변경3(좋아요3 + 1) }}>👍</span> {좋아요3}</h3>
         <p>2월 19일 발행</p>
         <hr />
       </div>
